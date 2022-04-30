@@ -1,0 +1,70 @@
+@import './vars'; 
+@import './header_footer';
+@import './main';
+@import './utils';
+@import './slider';
+
+@import '@splidejs/splide/css';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent,rgba($primario, .2));
+  border-radius: 6px;
+}
+*::selection, i::selection{
+  background: rgba($primario, .2);
+}
+body{
+  position: relative;
+  height: auto;
+  font-family: Avenir, 
+  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+  'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+.noscroll{
+  display: none;
+}
+
+.invisible2{
+  visibility: hidden;
+}
+
+
+h2, h3, h4{
+  font-size: 2em;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 577px) and (max-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 769px) and (max-width: 992px) {
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (max-width: 1400px) {}

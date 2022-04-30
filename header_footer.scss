@@ -1,0 +1,198 @@
+@import './vars.scss';
+
+body {
+  header {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      margin: .8em;
+      cursor: default;
+    }
+
+    #navbar-abrir {
+      font-size: 1.3em;
+    }
+
+    ul {
+      transition: $transition;
+      display: flex;
+      width: $ancho-menu;
+      justify-content: space-around;
+      position: sticky;
+      top: 0;
+
+      li {
+        list-style: none;
+        transition: $transition;
+        position: relative;
+
+        a {
+          transition: $transition;
+        }
+
+        a::before {
+          content: '';
+          width: 90%;
+          height: .1em;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          bottom: -5px;
+          background-color: $negro;
+          transform: translateX(100%);
+          opacity: 0;
+          transition: $transition;
+
+        }
+
+        a:hover {
+          &::before {
+            transform: translateX(0%);
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    margin-bottom: 3em;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1em auto;
+
+    p {
+      font-weight: 700;
+      color: $negro;
+    }
+
+    a {
+      padding: 0;
+
+      .logo-nico {
+
+        width: 32px;
+        transform: translateY(10px);
+      }
+    }
+  }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+
+  body {
+    position: relative;
+
+    header {
+      margin-bottom: 2em;
+      gap: 0;
+
+      #navbar-cerrar {
+        position: absolute;
+        z-index: 3;
+        font-size: 2.6em;
+      }
+      .invisible {
+        display: none;
+      }
+
+      ul {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: $blanco;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3em;
+        align-items: center;
+        
+        li {
+          font-size: 1.4em;
+        }
+      }
+    }
+
+    footer {
+      font-size: .8em;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576.1px) {
+
+  $ancho-menu: 100%;
+
+  body {
+    header {
+
+      #navbar-cerrar,
+      #navbar-abrir {
+        display: none;
+      }
+
+      ul {
+        width: $ancho-menu;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  body {
+    header {
+      #navbar-cerrar,
+      #navbar-abrir {
+        display: none;
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  $ancho-menu: 50%;
+
+  body {
+    header {
+
+      #navbar-cerrar,
+      #navbar-abrir {
+        display: none;
+      }
+
+      ul {
+        width: $ancho-menu;
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  body {
+    header {
+      #navbar-cerrar,
+      #navbar-abrir {
+        display: none;
+      }
+    }
+  }
+}

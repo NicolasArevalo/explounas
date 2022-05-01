@@ -3,7 +3,7 @@ $primario: rgb(74, 5, 158);
 
 $secundario: rgb(186, 99, 217);
 $blanco: white;
-$negro: rgb(0, 3, 35);
+$negro: rgb(15, 0, 21);
 $transition: all .3s;
 $altura-section: 600px;
 $ancho-main: 72%;
@@ -14,8 +14,6 @@ $ancho-menu: 50%;
 $margin-top-article: 5em;
 
 $colorcito: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-
-/* $borde: 3px solid $negro; */
 
 @mixin borde($color: $negro) {
     $borde: 3px solid $color;

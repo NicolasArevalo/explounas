@@ -19,7 +19,7 @@ body {
         section {
             display: flex;
             justify-content: space-between;
-            /* align-items: center; */
+            
             gap: 1.5em;
             overflow: hidden;
             height: 80vh;
@@ -29,7 +29,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                /* margin-top: 5em; */
+                
                 gap: 1em;
                 width: $ancho-article;
             }
@@ -53,9 +53,6 @@ body {
         width: $ancho-ig;
         height: 100%;
         overflow-y: scroll;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
     }
 }
 
@@ -173,11 +170,6 @@ body {
             font-weight: bolder;
             transition: $transition;
             color: $negro;
-            /* -webkit-animation: color-change-5x 8s linear infinite alternate both;
-            animation: color-change-5x 8s linear infinite alternate both; */
-
-            //text-shadow: 0 1px 0 #888, 0 2px 0 #888, 0 3px 0 #888, 0 4px 0 #888, 0 5px 0 #888;
-
         }
 
         .wrapper {
@@ -479,10 +471,6 @@ body {
 
         flex-direction: column;
 
-
-        &-cata,
-        &-marcela {}
-
         &-cata img,
         &-marcela img {
             width: 150px;
@@ -503,7 +491,7 @@ body {
 
             section {
                 article {
-                    /* width: $ancho-article; */
+
                     margin-top: 3em;
                     font-size: medium;
                 }
@@ -517,25 +505,3 @@ body {
         }
     }
 }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    $altura-ig: 550px;
-
-    /* body{   
-        main{
-           
-            section{
-                
-                article{
-                    
-                    margin-top: $margin-top-article;
-                    
-                }
-            }
-        }
-    } */
-}
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (max-width: 1400px) {}

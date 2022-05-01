@@ -13,6 +13,8 @@ $ancho-article: 40%;
 $ancho-menu: 50%;
 $margin-top-article: 5em;
 
+$colorcito: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
 /* $borde: 3px solid $negro; */
 
 @mixin borde($color: $negro) {

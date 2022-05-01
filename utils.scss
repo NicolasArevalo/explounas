@@ -36,8 +36,8 @@ a {
 .letra-pequeña {
   font-size: .8em;
   color: gray;
-  font-style: italic;
-  margin-left: 1rem;
+  
+  margin-left: .5rem;
 }
 
 .subir {
@@ -47,6 +47,20 @@ a {
   bottom: .5em;
   left: .5em;
 }
+.frase{
+  font-family: 'Lora', serif;
+  color: rgba($primario, .8);
+  font-style: italic;
+}
+
+.noscroll{
+  display: none;
+}
+
+.invisible2{
+  visibility: hidden;
+}
+
 
 .pointer{
   cursor: pointer;

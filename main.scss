@@ -118,6 +118,7 @@ body {
                 display: flex;
                 margin: .7em 0;
                 border-bottom: 1px solid rgba($negro, .07); 
+                font-size: medium;
                 &::before{
                     content: '👉🏼';
                     margin: 0 .1em;

@@ -32,27 +32,3 @@ body{
 h2, h3, h4{
   font-size: 2em;
 }
-
-
-// Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) {
-  
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 577px) and (max-width: 768px) {
-
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 769px) and (max-width: 992px) {
-
-}
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  
-}
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (max-width: 1400px) {}

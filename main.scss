@@ -45,7 +45,6 @@ body {
     }
 }
 
-
 .nuestro_trabajo {
     display: flex;
 
@@ -68,7 +67,6 @@ body {
     .espacio_trabajo-img {
         width: 250px;
         height: auto;
-        max-height: 250px;
         flex-grow: 1;
     }
 }
@@ -120,10 +118,11 @@ body {
                 border-bottom: 1px solid rgba($negro, .07); 
                 font-size: medium;
                 &::before{
-                    content: '👉🏼';
+                    content: '\2022';
                     margin: 0 .1em;
                     display: inline;
-                    font-size: smaller;
+                    /* font-size: smaller; */
+                    color: $primario;
                 }
                 #ic{
                     font-size: smaller;
@@ -313,9 +312,7 @@ body {
     $altura-section: auto;
     $ancho-main: 90%;
     $ancho-article: 90%;
-
     $ancho-ig: 100%;
-
     $margin-top-article: 0;
 
     body {

@@ -61,7 +61,7 @@ let io = new IntersectionObserver(function (entries) {
             let wasShown = entry.target.classList.contains('animate_animated')
             if (!wasShown) {
                 entry.target.classList.remove('invisible2')
-                entry.target.style.animation = 'fadeIn .8s ease-in-out'
+                entry.target.style.animation = 'fadeIn .6s ease-in-out'
                 io.unobserve(entry.target)
             }
         }

@@ -79,13 +79,23 @@ body {
     align-items: center;
 
     &-cata,
-    &-marcela {
+    &-tarjeta {
         display: flex;
         flex-direction: column;
         align-items: center;
+        
         h3{
             position: relative;
         }
+        h4{
+            font-size: medium;
+            color: rgba($negro, .6);
+            font-style: italic;
+            font-weight: 300;
+        }
+    }
+
+    &-cata {
         h3::after{
             content: '';
             position: absolute;
@@ -95,6 +105,29 @@ body {
             height: 2px;
             background: $colorcito;
             z-index: -1;
+        }
+    }
+
+    &-tarjeta{
+        
+        padding: 2em 1em;
+        ul{
+            width: 70%;
+            li{
+                list-style: none;
+                display: flex;
+                margin: .7em 0;
+                border-bottom: 1px solid rgba($negro, .07); 
+                &::before{
+                    content: '👉🏼';
+                    margin: 0 .1em;
+                    display: inline;
+                    font-size: smaller;
+                }
+                #ic{
+                    font-size: smaller;
+                }
+            }
         }
     }
 
@@ -243,10 +276,14 @@ body {
                 background: #0a37a9;
                 color: #ffffff;
             }
-
+            & .whatsapp{
+                animation: pulse 1s infinite;
+                
+            }
             & .whatsapp:hover,
             & .whatsapp:hover .tooltip,
             & .whatsapp:hover .tooltip::before {
+                animation: none;
                 background: #11a429;
                 color: #ffffff;
             }
@@ -255,6 +292,13 @@ body {
             & .instagram:hover .tooltip,
             & .instagram:hover .tooltip::before {
                 background: #d24fe1;
+                color: #ffffff;
+            }
+
+            & .tiktok:hover,
+            & .tiktok:hover .tooltip,
+            & .tiktok:hover .tooltip::before {
+                background: #25025a;
                 color: #ffffff;
             }
 
@@ -387,6 +431,9 @@ body {
         &-cata img,
         &-marcela img {
             width: 160px;
+        }
+        &-tarjeta ul {
+            width: 90%;
         }
     }
 }

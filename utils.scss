@@ -70,6 +70,29 @@ a {
   cursor: pointer;
 }
 
+.modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  /* left: 0;
+  bottom: 0;
+  right: 0; */
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  background-color: rgba($negro, .3);
+  overflow: hidden;
+  z-index: 5;
+
+  &-img{
+    width: 70%;
+    z-index: 6;
+    object-fit: cover;
+
+  }
+}
 
 body {
   .social_media {

@@ -124,9 +124,32 @@ body {
   }
 }
 
+@keyframes appear{
+  0%{
+      opacity: 0%;
+  }
+  100%{
+      opacity: 100%;
+  }
+}
+
 @media (max-width: 576px) {
   .subir {
     font-size: 2em;
     bottom: 2em;
   }
+}
+
+/* banner */
+
+.banner{
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 6px 0;
+  background: rgb(74, 5, 158);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
 }

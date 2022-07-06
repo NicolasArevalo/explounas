@@ -17,6 +17,7 @@ const ir = [...ArrayIr]
 function abrir() {
     btncerrar.classList.remove('invisible')
     navbar.classList.remove('invisible')
+    navbar.classList.add('fade')
     main.classList.add('noscroll')
     footer.classList.add('noscroll')
 

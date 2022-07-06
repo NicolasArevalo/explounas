@@ -108,9 +108,14 @@ body {
         position: absolute;
         z-index: 3;
         font-size: 2.6em;
+        opacity: 0;
+        animation: appear .2s linear .2s forwards;
       }
       .invisible {
         display: none;
+      }
+      .fade{
+        animation: appear .2s linear .2s forwards;
       }
 
       ul {
@@ -124,6 +129,7 @@ body {
         justify-content: center;
         gap: 3em;
         align-items: center;
+        opacity: 0;
         
         li {
           font-size: 1.4em;

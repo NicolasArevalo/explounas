@@ -133,25 +133,18 @@ body {
     &-tarjeta {
 
         padding: 2em 1em;
+        h3{
+            align-self: flex-start;
+        }
 
         ul {
-            width: 85%;
+            width: 100%;
 
             li {
                 list-style: none;
                 display: flex;
                 margin: .7em 0;
-                //border-bottom: 1px solid rgba($negro, .07);
                 font-size: medium;
-
-                &::before {
-                    content: '\2022';
-                    margin: 0 .1em;
-                    display: inline;
-
-                    color: $primario;
-                }
-
                 #ic {
                     font-size: smaller;
                 }

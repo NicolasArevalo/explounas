@@ -1,26 +1,54 @@
 @import './vars.scss';
+
 @font-face {
   font-family: 'xmas';
   src: url(./assets/font/font.otf);
 }
 
+.btn {
+   width: 70%;
+/*  height: 100px; 
+  font-size: 30px;*/
+  line-height: 30px;
+  text-align: center;
+  color: $blanco;
+  border-radius: 50px;
+  background: linear-gradient(-45deg, #c48ef7, #b381e2, #bd92e7, #75a5e8, #5e9ef7);
+  background-size: 600%;
+  -webkit-animation: anime 16s linear infinite;
+  animation: anime 16s linear infinite;
+
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
 .boton {
-  
+
   color: $negro;
   font-weight: 700;
   width: 50%;
 
-  padding: 10px;
+  //padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  
+  background: white;
+
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
   border-radius: 10px;
   @include borde();
-  box-shadow: 6px 4px 10px rgba($negro, .3);
+  //box-shadow: 6px 4px 10px rgba($negro, .3);
 
 
   &:hover {
@@ -40,7 +68,7 @@ a {
 .letra-pequeña {
   font-size: .8em;
   color: gray;
-  
+
   margin-left: .5rem;
 }
 
@@ -51,26 +79,27 @@ a {
   bottom: .5em;
   left: .5em;
 }
-.frase{
+
+.frase {
   font-family: 'Lora', serif;
   color: rgba($primario, .8);
   font-style: italic;
 }
 
-.noscroll{
+.noscroll {
   display: none;
 }
 
-.invisible2{
+.invisible2 {
   visibility: hidden;
 }
 
 
-.pointer{
+.pointer {
   cursor: pointer;
 }
 
-.modal{
+.modal {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,7 +115,7 @@ a {
   overflow: hidden;
   z-index: 5;
 
-  &-img{
+  &-img {
     width: 70%;
     z-index: 6;
     object-fit: cover;
@@ -124,12 +153,13 @@ body {
   }
 }
 
-@keyframes appear{
-  0%{
-      opacity: 0%;
+@keyframes appear {
+  0% {
+    opacity: 0%;
   }
-  100%{
-      opacity: 100%;
+
+  100% {
+    opacity: 100%;
   }
 }
 
@@ -142,14 +172,119 @@ body {
 
 /* banner */
 
-.banner{
+.banner {
   display: block;
   width: 100%;
   height: auto;
   text-align: center;
   padding: 6px 0;
-  background: rgb(74, 5, 158);
+  background: $gradiente-primario;
   color: white;
+  text-shadow: 1px 1.5px 3px #0f0015;
   font-weight: 500;
   cursor: pointer;
+
+}
+
+/* links */
+
+.wrapper-links {
+  display: inline-flex;
+  list-style: none;
+
+  & .icon {
+    position: relative;
+    background: $negro;
+
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  & .color-icono {
+    color: $blanco;
+  }
+
+  & .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  & .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  & .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  & .icon:hover span,
+  & .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  & .facebook:hover,
+  & .facebook:hover .tooltip,
+  & .facebook:hover .tooltip::before {
+    background: #0a37a9;
+    color: #ffffff;
+  }
+
+  & .whatsapp {
+    animation: pulse 1s infinite;
+
+  }
+
+  & .whatsapp:hover,
+  & .whatsapp:hover .tooltip,
+  & .whatsapp:hover .tooltip::before {
+    animation: none;
+    background: #11a429;
+    color: #ffffff;
+  }
+
+  & .instagram:hover,
+  & .instagram:hover .tooltip,
+  & .instagram:hover .tooltip::before {
+    background: #d24fe1;
+    color: #ffffff;
+  }
+
+  & .tiktok:hover,
+  & .tiktok:hover .tooltip,
+  & .tiktok:hover .tooltip::before {
+    background: #25025a;
+    color: #ffffff;
+  }
+
 }

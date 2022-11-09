@@ -13,6 +13,10 @@ $ancho-article: 40%;
 $ancho-menu: 50%;
 $margin-top-article: 5em;
 
+$gradiente-primario: linear-gradient(62deg, #8ebcfc 0%, #E0C3FC 100%);
+$gradiente-invertido: linear-gradient(62deg, #E0C3FC 0%, #8ebcfc 100%);
+$gradiente-oscuro: linear-gradient(62deg, #c48ef7 0%, #5e9ef7 100%);
+
 $colorcito: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 
 @mixin borde($color: $negro) {

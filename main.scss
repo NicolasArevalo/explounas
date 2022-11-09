@@ -369,7 +369,7 @@ body {
                 &:nth-child(2) {
                     flex-direction: column;
                     gap: 0;
-                    max-width: 100%;
+                    /* max-width: 100%; */
                     flex-grow: 0 !important;
                     height: 50vh;
                 }

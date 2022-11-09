@@ -9,21 +9,26 @@
   <title>Explouñas | website</title>
 
   <link rel="stylesheet" href="./style.scss">
+  <link rel="stylesheet" href="./servicios.scss">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body id="root">
-  <span class="banner" onclick="window.scrollTo(0, document.body.scrollHeight);"> ¡Reserva tu cita aquí! <i class="fab fa-whatsapp"></i> </span>
+  <span class="banner" onclick="window.scrollTo(0, document.body.scrollHeight);"> ¡Reserva tu cita aquí! </span>
   <header id="home">
     <h1>Explouñas</h1>
     <span id="navbar-abrir" class="pointer iconos-navbar"><i class="fa-solid fa-bars-staggered"></i></span>
     <span id="navbar-cerrar" class="pointer invisible"><i class="fa-solid fa-xmark"></i></span>
     <ul class="navbar invisible">
       <li class="ir"><a href="#nuestro-trabajo">Nuestro trabajo</a></li>
-      <li class="ir"><a href="#espacio_trabajo">Ubicación</a></li>
+      <li class="ir"><a href="#servicios">Servicios</a></li>
       <li class="ir"><a href="#nosotras">Nosotras</a></li>
       <li class="ir"><a href="#agenda"><b>¡Contáctanos!</b></a></li>
     </ul>
@@ -31,7 +36,7 @@
   <main>
     <section id="nuestro_trabajo" class="target">
       <article>
-        <h2 class="animate_animated animate__fadeIn">Nuestro trabajo 💅🏼</h2>
+        <h2 class="animate_animated animate__fadeIn">Nuestro trabajo</h2>
         <span class="letra-pequeña frase">"La vida no es perfecta, pero tus uñas pueden serlo."</span>
         <p>
           Explouñas es una empresa dedicada al cuidado y la belleza de tus uñas. Estamos comprometidas
@@ -39,7 +44,7 @@
           amor.
           Hemos visto cómo tus uñas pueden darte más confianza y seguridad, por eso, no dudes en contactarnos.
         </p>
-        <a href="https://wa.me/573178062298?text=¡Hola,%20explouñas!%20:)%20" class="boton">¡Reserva tu cita!</a>
+        <a href="https://wa.me/573178062298?text=¡Hola,%20explouñas!%20:)%20" class="btn">Agenda tu cita</a>
         <!-- <span class="letra-pequeña">Atendemos por orden de llegada.</span> -->
       </article>
       <div class="nuestro_trabajo-ig">
@@ -48,24 +53,89 @@
           defear>(function (d, s, id) { var js; if (d.getElementById(id)) { return; } js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript"));</script>
       </div>
     </section>
-    <section id="espacio_trabajo" class="espacio_trabajo target invisible2">
-      <article>
-        <h2>Ubicación 🏬</h2>
-        <p> <b>📍Cll 5 #10-20 - b. Julian Fierro. Rivera, Huila</b> <a href="https://goo.gl/maps/sVF1Che1g5nzzQtX6">Ver en google
-            maps</a><br>
-          Contamos con unas instalaciones que nos permiten ofrecerte un servicio de calidad y comodidad.
-          Nuestro equipo y utilería también es de alta calidad, por lo que te ofrecemos un servicio de excelencia. Digno
-          de tus uñas.
-        </p>
-      </article>
+    <section id="servicios" class="target invisible2">
+      <div class="cards">
+        <a
+          href="https://wa.me/573178062298?text=¡Hola,%20explouñas!%20Quiero%20averiguar%20por%20el%20servicio%20de%20uñas%20tradicional.">
+          <div class="card">
+            <h3>Tradicional</h3>
+            <span>Manos</span>
+            <span>Pies</span>
+            <p>$15.000</p>
+          </div>
+        </a>
+        <a
+          href="https://wa.me/573178062298?text=¡Hola,%20explouñas!%20Quiero%20averiguar%20por%20el%20servicio%20de%20uñas%20semipermanente.">
+          <div class="card">
+            <h3>Semipermanente</h3>
+            <span>Manos</span>
+            <p>$40.000</p>
+          </div>
+        </a>
+        <a
+          href="https://wa.me/573178062298?text=¡Hola,%20explouñas!%20Quiero%20averiguar%20por%20el%20servicio%20de%20uñas%20semipermanente.">
+          <div class="card">
+            <h3>Semipermanente</h3>
+            <span>Pies</span>
 
-      <div class="espacio_trabajo-imgs">
-        <img src="./assets/inside.jpg" alt="local de explouñas" class="espacio_trabajo-imgs-img" />
-        <img src="./assets/mesaP.jpg" alt="local de explouñas" class="espacio_trabajo-imgs-img">
-        <img src="./assets/frontC.jpg" alt="local de explouñas" class="espacio_trabajo-imgs-img">
+            <p>$45.000</p>
+          </div>
+        </a>
+        <a
+          href="https://wa.me/573178062298?text=¡Hola,%20explouñas!%20Quiero%20averiguar%20por%20el%20servicio%20de%20uñas%20acrílicas.">
+          <div class="card">
+            <h3>Acrílicas</h3>
+            <span>Manos</span>
+
+            <p>$90.000</p>
+          </div>
+        </a>
+        <a
+          href="https://wa.me/573178062298?text=¡Hola,%20explouñas!%20Quiero%20averiguar%20por%20el%20servicio%20de%20spa.">
+          <div class="card">
+            <h3>Spa</h3>
+            <span>Manos</span>
+            <span>Pies</span>
+            <p>$50.000</p>
+          </div>
+        </a>
+        <a
+          href="https://wa.me/573178062298?text=¡Hola,%20explouñas!%20Quiero%20averiguar%20por%20el%20servicio%20de%20retiro%20de%20uñas%20acrílicas.">
+          <div class="card">
+            <h3>Retiro de acrílicas</h3>
+            <span>Manos</span>
+
+            <p>$20.000</p>
+          </div>
+        </a>
+        <a
+          href="https://wa.me/573178062298?text=¡Hola,%20explouñas!%20Quiero%20averiguar%20por%20el%20servicio%20de%20retiro%20de%20uñas%20semipermanente.">
+          <div class="card">
+            <h3>Retiro de semipermanente</h3>
+            <span>Manos</span>
+
+            <p>$10.000</p>
+          </div>
+        </a>
+        <a
+          href="https://wa.me/573178062298?text=¡Hola,%20explouñas!%20Quiero%20averiguar%20por%20el%20servicio%20de%20uñas%20en%20extensión.">
+          <div class="card">
+            <h3>Extensiones</h3>
+            <span>Manos</span>
+
+            <p>$30.000</p>
+          </div>
+        </a>
+        <a
+          href="https://wa.me/573178062298?text=¡Hola,%20explouñas!%20Quiero%20averiguar%20por%20todos%20los%servicios.">
+          <div class="card vermas">
+            <h3>Ver más...</h3>
+          </div>
+        </a>
       </div>
 
     </section>
+
     <section id="nosotras" class="nosotras no100vh target invisible2">
       <div class="nosotras-cata">
         <img src="./assets/cata.jpg" alt="Catalina Vizcaya">
@@ -75,67 +145,88 @@
       </div>
       <div class="nosotras-tarjeta">
         <h3>Mis titulaciones 📄</h3>
-        <h4>con respecto al manicure y pedicure</h4>
+        <!-- <h4>con respecto al manicure y pedicure</h4> -->
         <ul>
           <li>
-            <p><a href="./assets/certificados/manicure.pdf">Curso de Manicure por Masglo <i  id="ic"
+            <p><a href="./assets/certificados/manicure.pdf">Curso de Manicure Masglo <i id="ic"
                   class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
           </li>
           <li>
-            <p><a href="./assets/certificados/gel.pdf">Curso de Gel expert por Masglo <i id="ic"
+            <p><a href="./assets/certificados/gel.pdf">Curso de Gel expert Masglo <i id="ic"
                   class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
           </li>
           <li>
-            <p><a href="./assets/certificados/decoracion.pdf">Curso de Decoración con esmalte por Masglo <i id="ic"
+            <p><a href="./assets/certificados/decoracion.pdf">Curso de Decoración con esmalte Masglo <i id="ic"
                   class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
           </li>
           <li>
-            <p><a href="./assets/certificados/covid.pdf">Curso de Bioseguridad por Masglo <i id="ic"
+            <p><a href="./assets/certificados/covid.pdf">Curso de Bioseguridad Masglo <i id="ic"
                   class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
           </li>
         </ul>
       </div>
     </section>
-    <section id="agenda" class="agenda no100vh target invisible2">
-      <div class="agenda-container">
-        <h2 class="agenda-container-link"> ¡Contáctanos! </h2>
-        <ul class="wrapper">
-          <li class="icon facebook">
-            <span class="tooltip">Facebook</span>
-            <a href="https://www.facebook.com/cata.vizcaya">
-              <span class="color-icono"><i class="fab fa-facebook-f"></i></span>
-            </a>
-          </li>
-          <li class="icon instagram">
-            <span class="tooltip">Instagram</span>
-            <a href="https://www.instagram.com/explounas/">
-              <span class="color-icono"><i class="fab fa-instagram"></i></span>
-            </a>
-          </li>
-          <li class="icon tiktok">
-            <span class="tooltip">TikTok</span>
-            <a href="https://www.tiktok.com/@explounas">
-              <span class="color-icono"><i class="fab fa-tiktok"></i></span>
-            </a>
-          </li>
 
-          <li class="icon whatsapp">
-            <span class="tooltip">WhatsApp</span>
-            <a href="https://wa.me/573178062298&text=¡Hola, explouñas! :)">
-              <span class="color-icono"><i class="fab fa-whatsapp"></i></span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-    </section>
-    
   </main>
+
+  <!--FOOTER-->
   <footer>
-    <p>Hecho con mucho amor, por <a href="https://niiico.com"><img class="logo-nico" src="./assets/NAicon-01.png"
-          alt="Logo de Nicolás Arévalo"></a> </p>
+    <div class="top_header" id="agenda">
+      <section>
+        <span><i class="fa fa-map-marker"></i></span>
+        <span><a href="">Calle 5 #10-20-b, Rivera.</a></span>
+      </section>
+      <section>
+        <span><i class="fa fa-phone"></i></span>
+        <span>3178062298</span>
+      </section>
+      <section>
+        <span><i class="fa fa-envelope"></i></span>
+        <span>explounas@gmail.com</span>
+      </section>
+    </div>
+    <span class="border-shape"></span>
+    <div class="bottom_content">
+      <ul class="wrapper-links">
+        <li class="icon facebook">
+          <span class="tooltip">Facebook</span>
+          <a href="https://www.facebook.com/cata.vizcaya">
+            <span class="color-icono"><i class="fab fa-facebook-f"></i></span>
+          </a>
+        </li>
+        <li class="icon instagram">
+          <span class="tooltip">Instagram</span>
+          <a href="https://www.instagram.com/explounas/">
+            <span class="color-icono"><i class="fab fa-instagram"></i></span>
+          </a>
+        </li>
+        <li class="icon tiktok">
+          <span class="tooltip">TikTok</span>
+          <a href="https://www.tiktok.com/@explounas">
+            <span class="color-icono"><i class="fab fa-tiktok"></i></span>
+          </a>
+        </li>
+
+        <li class="icon whatsapp">
+          <span class="tooltip">WhatsApp</span>
+          <a href="https://wa.me/573178062298&text=¡Hola, explouñas! :)">
+            <span class="color-icono"><i class="fab fa-whatsapp"></i></span>
+          </a>
+        </li>
+      </ul>
+      <section>
+        <a href="#nuestro-trabajo">Nuestro trabajo</a>
+        <a href="#servicio">Servicio</a>
+        <a href="#nosotras">Nosotras</a>
+        <a href="#agenda">Contacto</a>
+      </section>
+    </div>
+    <div class="copyright">
+      © 2022 Explouñas website
+    </div>
   </footer>
   <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>
   <script type="module" src="/main.js"></script>
 </body>
+
 </html>
